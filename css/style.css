@@ -10,19 +10,23 @@ body {
     padding: 0px;
     background-color: #e2e7ec;
     margin: auto;
-    padding-top: 91px;
 }
 
 #container {
     display: grid;
     grid-template-columns: 360px 360px 360px;
-    grid-template-rows: 540px 540px;
+    grid-template-rows: 71px 540px 540px;
     justify-content: center;
     gap: 20px 20px;
     grid-template-areas:
+        "head head head"
         "big big small_1"
         "small_2 small_3 small_4"
         "foot foot foot"
+}
+#head {
+    grid-area: head;
+    height: 71px;
 }
 
 #item_big {
