@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #e2e7ec;
+    padding-top: 91px;
+}
+
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: auto;
+}
+
+.big_content {
+    width: 740px;
+    height: 540px;
+    background: url(../img/car.png);
+    margin-bottom: 20px;
+}
+
+.big_content .text {
+    font-size: 30px;
+    font-family: Myriad Pro, sans-serif; 
+    color: white;
+    padding-left: 45px;
+}
+
+.content {
+    width: 360px;
+    height: 540px;
+    background-color: #ffffff;
+}
+
+#november {
+    display: inline-block;
+    padding-left: 45px;
+    margin-top: 30px;
+    padding-top: 370px;
+    color: #818181;
+    font-size: 13px;
+    font-family: Myriad Pro, sans-serif;
+}
+
+.november {
+    display: inline-block;
+    padding-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 24px;
+    color: #818181;
+    font-size: 13px;
+    font-family: Myriad Pro, sans-serif;
+}
+
+.text {
+    display: inline-block;
+    padding-left: 25px;
+    margin: 0px;
+    color: #1d1d1d;
+    font-size: 22px;
+    font-family: Myriad Pro, sans-serif;
+}
+
+#round_photo {
+    margin-top: 71px;
+    padding-left: 25px;
+}
+
+footer {
+    display: flex;
+    max-width: 1120px;
+    justify-content: center;
+    margin: auto;
+    padding-top: 78px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 13px;
+    font-family: Myriad Pro, sans-serif;
+    color: #99a5b0;
+}
+
+footer p {
+    display: inline-block;
+    margin-left: 15px;
+}
