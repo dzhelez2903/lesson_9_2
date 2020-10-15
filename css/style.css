@@ -14,7 +14,7 @@ body {
 
 #container {
     display: grid;
-    grid-template-columns: 360px 360px 360px;
+    grid-template-columns: repeat(3, 360px);
     grid-template-rows: 71px 540px 540px;
     justify-content: center;
     gap: 20px 20px;
