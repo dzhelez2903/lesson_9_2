@@ -9,40 +9,71 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #e2e7ec;
+    margin: auto;
     padding-top: 91px;
 }
 
-.conteiner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1120px;
-    margin: auto;
+#container {
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: 540px 540px;
+    justify-content: center;
+    gap: 20px 20px;
+    grid-template-areas:
+        "big big small_1"
+        "small_2 small_3 small_4"
+        "foot foot foot"
 }
 
-.big_content {
-    width: 740px;
-    height: 540px;
-    background: url(../img/car.png);
-    margin-bottom: 20px;
-}
-
-.big_content .text {
-    font-size: 30px;
-    font-family: Myriad Pro, sans-serif; 
-    color: white;
+#item_big {
+    grid-area: big;
+    background: url(../img/car.png) no-repeat;
     padding-left: 45px;
 }
 
-.content {
-    width: 360px;
-    height: 540px;
-    background-color: #ffffff;
+#item_small_1 {
+    grid-area: small_1;
+}
+
+#item_small_2 {
+    grid-area: small_2;
+}
+
+#item_small_3 {
+    grid-area: small_3;
+}
+
+#item_small_4 {
+    grid-area: small_4;
+}
+
+#foot {
+    grid-area: foot;
+    height: 180px;
+    text-align: center;
+    padding-top: 78px;
+    padding-bottom: 100px;
+    font-size: 13px;
+    font-family: Myriad Pro, sans-serif;
+    color: #99a5b0;
+}
+
+#foot p {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+
+#item_small_1,
+#item_small_2,
+#item_small_3,
+#item_small_4,
+#item_big {
+    background-color: white;
 }
 
 #november {
     display: inline-block;
-    padding-left: 45px;
     margin-top: 30px;
     padding-top: 370px;
     color: #818181;
@@ -60,6 +91,14 @@ body {
     font-family: Myriad Pro, sans-serif;
 }
 
+#text {
+    display: inline-block;
+    font-size: 37px;
+    font-family: Myriad Pro, sans-serif;
+    color: white;
+    margin: 0;
+}
+
 .text {
     display: inline-block;
     padding-left: 25px;
@@ -70,24 +109,6 @@ body {
 }
 
 #round_photo {
-    margin-top: 71px;
+    margin-top: 60px;
     padding-left: 25px;
-}
-
-footer {
-    display: flex;
-    max-width: 1120px;
-    justify-content: center;
-    margin: auto;
-    padding-top: 78px;
-    padding-bottom: 100px;
-    text-align: center;
-    font-size: 13px;
-    font-family: Myriad Pro, sans-serif;
-    color: #99a5b0;
-}
-
-footer p {
-    display: inline-block;
-    margin-left: 15px;
 }
